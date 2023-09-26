@@ -28,8 +28,7 @@ class MyData extends GetView<MyController> {
                             topLeft: Radius.circular(24),
                             bottomLeft: Radius.circular(24)),
                         child: Image.network(
-                          myController.data[index].results[index].image
-                              .toString(),
+                          myController.data[index].image.toString(),
                           fit: BoxFit.cover,
                           width: 143,
                           height: 134,
@@ -38,12 +37,11 @@ class MyData extends GetView<MyController> {
                       const SizedBox(
                         height: 3,
                       ),
-                      Text(myController.data[index].results[index].id
-                          .toString()),
+                      Text(myController.data[index].id.toString()),
                       const SizedBox(
                         height: 3,
                       ),
-                      Text(myController.data[index].results[index].name),
+                      Text(myController.data[index].name),
                     ],
                   )))),
     );
